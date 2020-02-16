@@ -9,11 +9,184 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>N&K Cooking</title>
+    <style>
+      hr {
+          border: 1px solid gray;
+          width: 75%;
+      }
+      .background-gray {
+          background-color: #f0edee;
+      }
+      .green-triangle {
+        -moz-transition:.3s;
+        -ms-transition:.3s;
+        -o-transition:.3s;
+        transition:.3s;
+        border-style: solid;
+        width: 0px;
+        height: 0px;
+        line-height: 0px;
+        border-width: 0px 100px 100px 100px;
+        border-color: transparent transparent #222222 transparent;
+        _border-color: #000 #000 #222222 #000;
+        _filter:progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+      }
+      .green-triangle-header{
+        border-color: #222222 transparent transparent; 
+        border-width: 550px 2000px 0px 0px; 
+        position: relative;
+        text-align: center;
+        background-color: #f0edee;
+      }
+      .nk-icon {
+        top: 50%;
+        left: 50%; /*60 with sidebar*/
+        position: fixed;
+        text-align: center;
+        transform: translate(-50%, -50%);
+      }
+      .icon {
+        height: 450px;
+      }
+      .header-bar {
+        height: 65px;
+        background-color: #758282; /*#6b6669; #b5e53b #527f9a*/
+        padding: 11px;
+        box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+      }
+      /*485978*/
+      .sidebar {
+        background-color: #f0edee;
+        border-right: 1px solid lightgray;
+        box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+      }
+      .sidebar-sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 48px;
+        height: calc(100vh - 48px);
+        padding-top: .5rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      .list-group-item {
+          padding: 0;
+          background-color: transparent;
+          border: none;
+      }
+      .button-like {
+          text-align: center;
+          padding-top: 7px;
+          width: 80px;
+          height: 45px;
+          border-radius: 7px;
+          margin-right: 10px;
+      }
+      .btn-green {
+        color: #b5e53b;
+        border: 2px solid #b5e53b;
+      }
+      .btn-blue {
+          color:#527f9a;
+          border: 2px solid #527f9a;
+          font-weight: 500;
+      }
+      .row {
+          width: 100%;
+      }
+    </style>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <div href="N&KCooking_LightGreen_Icon.png" style="height: 300px; width: 300px;"></div>
+  <body class="background-gray">
+    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar header-bar">
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item">
+                <div class="button-like btn-green">
+                    Home
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="button-like btn-green">
+                    Recipies
+                </div>
+            </li>            
+        </ul>
+        
+        
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <!--<nav class="col-md-2 d-none d-md-block sidebar">
+                <div class="sidebar-sticky">
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="https://getbootstrap.com/docs/4.0/examples/dashboard/#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                        Home <span class="sr-only">(current)</span>
+                      </a>
+                    </li>
+      
+                    <h6 class="sidebar-heading d-flex justify-content-between px-3 mt-4 mb-1 text-muted">
+                        <span>
+                        <svg class="bi bi-box-arrow-down" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="float: right;">
+                            <path fill-rule="evenodd" d="M6.646 13.646a.5.5 0 01.708 0L10 16.293l2.646-2.647a.5.5 0 01.708.708l-3 3a.5.5 0 01-.708 0l-3-3a.5.5 0 010-.708z" clip-rule="evenodd"></path>
+                            <path fill-rule="evenodd" d="M10 6.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V7a.5.5 0 01.5-.5z" clip-rule="evenodd"></path>
+                            <path fill-rule="evenodd" d="M4.5 4A1.5 1.5 0 016 2.5h8A1.5 1.5 0 0115.5 4v7a1.5 1.5 0 01-1.5 1.5h-1.5a.5.5 0 010-1H14a.5.5 0 00.5-.5V4a.5.5 0 00-.5-.5H6a.5.5 0 00-.5.5v7a.5.5 0 00.5.5h1.5a.5.5 0 010 1H6A1.5 1.5 0 014.5 11V4z" clip-rule="evenodd"></path>
+                        </svg>
+                        Part A
+                        </span>
+                        <a class="d-flex align-items-center text-muted" href="https://getbootstrap.com/docs/4.0/examples/dashboard/#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://getbootstrap.com/docs/4.0/examples/dashboard/#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                Lab Instructions
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://getbootstrap.com/docs/4.0/examples/dashboard/#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                Lab Hints
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://getbootstrap.com/docs/4.0/examples/dashboard/#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                                Lab Equiptment
+                            </a>
+                        </li>
+                    </ul>
+                  </ul>
+                </div>
+            </nav>
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10" style="padding: 0;">-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="green-triangle green-triangle-header">
+                            <div class="nk-icon">
+                                <img class="icon" src="N&KCooking_GrayGreen_Icon.png"></img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--</main>-->
+            <br/><br/>
+            <div class="row">
+                <div class="col-md-12 flex-column">
+                    <hr/>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
