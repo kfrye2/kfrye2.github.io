@@ -1,0 +1,632 @@
+/* Background Colors */
+
+.bg-white {
+    background-color: #FCFBFB;
+}
+
+.bg-off-white {
+    background-color: #EAECE5;
+}
+
+.bg-light-gray {
+    background-color: #f0edee;
+}
+
+.bg-gray {
+    background-color: #A3A5A6;
+}
+
+.bg-dark-gray {
+    background-color: #8D8C8D;
+}
+
+.bg-charcoal {
+    background-color: #222222;
+}
+
+.bg-pink {
+    background-color: #ffb979;
+    /*#d34c5a;*/
+}
+
+.bg-dark-teal {
+    background-color: #0c555f;
+}
+
+.bg-light-blue {
+    background-color: #b5e53b;
+    /*#41add1;*/
+}
+
+/* ------------------------------------------------------- */
+
+/* ------------------------------------------------------- */
+
+/* Font Colors */
+
+.font-white {
+    color: #FCFBFB;
+}
+
+.font-off-white {
+    color: #EAECE5;
+}
+
+.font-light-gray {
+    color: #f0edee;
+}
+
+.font-gray {
+    color: #A3A5A6;
+}
+
+.font-dark-gray {
+    color: #8D8C8D;
+}
+
+.font-charcoal {
+    color: #222222;
+}
+
+.font-pink {
+    color: #ffb979;
+    /*#d34c5a;*/
+}
+
+.font-dark-teal {
+    color: #0c555f;
+}
+
+.font-light-blue {
+    color: #b5e53b;
+    /*#41add1;*/
+    /*#41add1;*/
+}
+
+.font-dark-pink {
+    color: #ff9939;
+}
+
+/* ------------------------------------------------------- */
+
+/* ------------------------------------------------------- */
+
+/* Font Family */
+
+.header-font {
+    font-family: 'Playfair Display SC', serif;
+}
+
+.sub-header-font {
+    font-family: 'Poiret One', cursive;
+}
+
+.section-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ------------------------------------------------------- */
+
+/* ------------------------------------------------------- */
+
+/* Shadows */
+
+.text-shdw {
+    text-shadow: 2px 2px 4px #8D8C8D;
+}
+
+.box-shdw {
+    box-shadow: 0 10px 16px 0 rgba(34, 34, 34, 0.2), 0 6px 20px 0 rgba(34, 34, 34, 0.19) !important;
+}
+
+/* ------------------------------------------------------- */
+
+/* ------------------------------------------------------- */
+
+/* Buttons */
+
+.button-like {
+    border-radius: 7px;
+    /* section-font */
+    margin-right: 10px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.btn-light-blue {
+    /* font-light-blue */
+    border-color: #0c555f;
+    /*#41add1;*/
+}
+
+.btn-light-blue:hover {
+    background-color: #0c555f;
+    /*#41add1;*/
+    opacity: 0.5;
+}
+
+.btn-pink {
+    /* font-pink */
+    border-color: #ffb979;
+    /*#d34c5a;*/
+    background-color: rgba(255, 185, 121, 0.3);
+}
+
+.btn-pink:hover {
+    background-color: #ffb979;
+    /*#d34c5a;*/
+    color: #8D8C8D;
+    opacity: 0.5;
+}
+
+.btn-charcoal {
+    /* font-light-blue */
+    border-color: #222222;
+    background-color: rgba(141, 140, 141, 0.5);
+    /*#41add1;*/
+}
+
+.btn-charcoal:hover {
+    background-color: #222222;
+    color: #8D8C8D;
+    /*#41add1;*/
+    opacity: 0.5;
+}
+
+.btn-dark-gray {
+    /* font-light-blue */
+    border-color: #8D8C8D;
+    background-color: rgba(141, 140, 141, 0.5);
+    color: #8D8C8D;
+    /*#41add1;*/
+}
+
+.btn-dark-gray:hover {
+    background-color: #8D8C8D;
+    /*#41add1;*/
+    opacity: 0.5;
+}
+
+/* ------------------------------------------------------- */
+
+/* Sidebar */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    border-right: 1px solid #8D8C8D;
+}
+
+@media (min-width: 768px) {
+    .d-md-block {
+        display: block!important;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+}
+
+.sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* ------------------------------------------------------- */
+
+/* ------------------------------------------------------- */
+
+/* Main page Header */
+
+.nav-bar-header {
+    height: 65px;
+    /* bg-charcoal */
+    padding: 11px;
+    /* box-shdw */
+}
+
+.list-group-horizontal {
+    margin: 0 0 auto auto;
+}
+
+.list-group-item {
+    /* button list group */
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+hr {
+    border: 1px solid #8D8C8D;
+    width: 75%;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-6 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* Main Page Header Images */
+
+.images {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header-holder {
+    position: relative;
+    text-align: center;
+    /* bg-light-gray */
+    /*height: 565px;*/
+    transform: translate(0%, -100%);
+}
+
+.main-background {
+    background-image: url(https://images.ctfassets.net/wy4h2xf1swlt/asset_41241/30ef1cebf2a5002862cd91ed2145214f/iStock-649772812-1-copy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    height: 565px;
+    filter: grayscale(75%);
+    opacity: 0.5;
+}
+
+.nk-icon {
+    margin: auto auto;
+}
+
+.nk-icon-c1 {
+    height: 350px;
+    width: 350px;
+    border-radius: 170px;
+    /*border: 5px solid #41add1;*/
+    transform: translate(0%, 60%);
+    margin: auto auto;
+    padding: 10px;
+}
+
+.nk-icon-c2 {
+    height: 330px;
+    width: 330px;
+    border-radius: 170px;
+}
+
+.header-font-sz {
+    /* header-font */
+    font-size: 120px;
+    transform: translate(0%, -50%);
+    margin-left: auto;
+    margin-right: auto;
+    /* text-shdw */
+}
+
+.sub-header-holder {
+    /* sub-header-font */
+    font-size: 80px;
+    left: 50%;
+    position: relative;
+    text-align: center;
+    transform: translate(-50%, -120%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tag-line {
+    font-size: 40px;
+    text-align: center;
+    margin: auto auto;
+}
+
+/* ------------------------------------------------------- */
+
+/* ------------------------------------------------------- */
+
+/* Sub-Images */
+
+.img-container {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.img-behind {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.img-container:hover .img-overlay {
+    opacity: 1;
+}
+
+.text-overlay {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.row-outer-holder {
+    margin-bottom: 50px;
+}
+
+.row-inner-holder-sm {
+    padding-top: 45px;
+}
+.row-inner-holder {
+    text-align:center;
+}
+.img-bracket-sm {
+    margin: auto auto; 
+    padding: 0; 
+    font-size: 200px; 
+    opacity: 0.6;
+}
+.img-bracket-right-sm {
+    padding-left: 5px; 
+}
+.img-bracket {
+    font-size: 250px; 
+    padding:0;
+}
+.col-img {
+    margin: auto auto;
+    padding: 0;
+}
+/* ------------------------------------------------------- */
+
+/* ------------------------------------------------------- */
+
+/* Block Quote */
+
+/* center the blockquote in the page */
+
+.blockquote-wrapper {
+    display: flex;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+/* Blockquote main style */
+
+.blockquote {
+    position: relative;
+    font-family: 'Poiret One', cursive;
+    max-width: 620px;
+    margin: 80px auto;
+    align-self: center;
+}
+
+/* Blockquote header */
+
+.blockquote h1 {
+    font-family: 'Poiret One', cursive;
+    position: relative;
+    /* for pseudos */
+    color: #d34c5a;
+    font-size: 2.8rem;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    border: 2px solid #fff;
+    border: solid 2px;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+/* Blockquote right double quotes */
+
+.blockquote h1:after {
+    content: "";
+    position: absolute;
+    border: 2px solid #d34c5a;
+    border-radius: 0 50px 0 0;
+    width: 60px;
+    height: 60px;
+    bottom: -60px;
+    left: 50px;
+    border-bottom: none;
+    border-left: none;
+    z-index: 3;
+}
+
+.blockquote h1:before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    border: 6px solid #f0edee;
+    bottom: -3px;
+    left: 50px;
+    z-index: 2;
+}
+
+/* increase header size after 600px */
+
+@media all and (min-width: 600px) {
+    .blockquote h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+}
+
+/* Blockquote subheader */
+
+.blockquote h4 {
+    position: relative;
+    color: #f0edee;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    padding-top: 15px;
+    z-index: 1;
+    margin-left: 150px;
+    padding-left: 12px;
+}
+
+.blockquote h4:first-letter {
+    margin-left: -12px;
+}
+
+/* Social Media Icons */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+    background: #00aff0;
+    color: white;
+}
+
+.fa-android {
+    background: #a4c639;
+    color: white;
+}
+
+.fa-dribbble {
+    background: #ea4c89;
+    color: white;
+}
+
+.fa-vimeo {
+    background: #45bbff;
+    color: white;
+}
+
+.fa-tumblr {
+    background: #2c4762;
+    color: white;
+}
+
+.fa-vine {
+    background: #00b489;
+    color: white;
+}
+
+.fa-foursquare {
+    background: #45bbff;
+    color: white;
+}
+
+.fa-stumbleupon {
+    background: #eb4924;
+    color: white;
+}
+
+.fa-flickr {
+    background: #f40083;
+    color: white;
+}
+
+.fa-yahoo {
+    background: #430297;
+    color: white;
+}
+
+.fa-soundcloud {
+    background: #ff5500;
+    color: white;
+}
+
+.fa-reddit {
+    background: #ff5700;
+    color: white;
+}
+
+.fa-rss {
+    background: #ff6600;
+    color: white;
+}
