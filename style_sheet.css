@@ -1,7 +1,7 @@
 /* Background Colors */
 
 .bg-white {
-    background-color: #FCFBFB;
+    background-color: #FCFBFB !important;
 }
 
 .bg-off-white {
@@ -219,14 +219,32 @@
 .sidebar-sticky {
     position: -webkit-sticky;
     position: sticky;
-    top: 0px;
+    top: 65px;
     height: calc(100vh - 48px);
-    padding-top: .5rem;
+    padding: .5rem;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #ffb979;
+}
+
 /* ------------------------------------------------------- */
+
+.container-fluid {
+    padding: 0;
+    margin-top: 65px;
+}
+
+.recipies-section-header {
+    padding-top: 65px;
+}
+
+.col-2 {
+    padding: 0;
+}
 
 /* ------------------------------------------------------- */
 
@@ -248,11 +266,6 @@
     padding: 0;
     background-color: transparent;
     border: none;
-}
-
-hr {
-    border: 1px solid #8D8C8D;
-    width: 75%;
 }
 
 .row {
@@ -423,10 +436,16 @@ hr {
 
 /* center the blockquote in the page */
 
+.info-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 65px;
+}
+
 .blockquote-wrapper {
-    display: flex;
-    height: 100vh;
-    padding: 0 20px;
+    /*display: flex;*/
+    /*height: 100vh;*/
+    /*padding-left: 20px;*/
 }
 
 /* Blockquote main style */
@@ -434,49 +453,63 @@ hr {
 .blockquote {
     position: relative;
     font-family: 'Poiret One', cursive;
-    max-width: 620px;
-    margin: 80px auto;
+    /* max-width: 620px; */
+    margin-top: 40px;
+    width: 200px;
+    /* padding-right: 10px; */
     align-self: center;
 }
 
 /* Blockquote header */
 
-.blockquote h1 {
+.blockquote .blockquote-quote {
     font-family: 'Poiret One', cursive;
     position: relative;
     /* for pseudos */
-    color: #d34c5a;
-    font-size: 2.8rem;
+    color: #ff9939;
+    font-size: 14px;
     font-weight: normal;
     line-height: 1;
     margin: 0;
     border: 2px solid #fff;
     border: solid 2px;
     border-radius: 20px;
-    padding: 25px;
+    padding: 8px;
 }
 
+
+/* Alert Message */
+#message {
+    position: fixed;
+    top: 45px;
+    left: 25%;
+    width: 50%;
+    z-index: 2000;
+}
+#inner-message {
+    margin: 0 auto;
+}
 /* Blockquote right double quotes */
 
-.blockquote h1:after {
+.blockquote .blockquote-quote:after {
     content: "";
     position: absolute;
-    border: 2px solid #d34c5a;
+    border: 2px solid #ff9939;
     border-radius: 0 50px 0 0;
     width: 60px;
-    height: 60px;
-    bottom: -60px;
+    height: 17px;
+    bottom: -17px;
     left: 50px;
     border-bottom: none;
     border-left: none;
     z-index: 3;
 }
 
-.blockquote h1:before {
+.blockquote .blockquote-quote:before {
     content: "";
     position: absolute;
     width: 80px;
-    border: 6px solid #f0edee;
+    border: 6px solid #FCFBFB;
     bottom: -3px;
     left: 50px;
     z-index: 2;
@@ -485,35 +518,34 @@ hr {
 /* increase header size after 600px */
 
 @media all and (min-width: 600px) {
-    .blockquote h1 {
-        font-size: 3rem;
+    .blockquote .blockquote-quote {
+        font-size: 14px;
         line-height: 1.2;
     }
 }
 
 /* Blockquote subheader */
 
-.blockquote h4 {
+.blockquote .blockquote-citation {
     position: relative;
-    color: #f0edee;
-    font-size: 1.3rem;
+    font-size: 10px;
     font-weight: 400;
     line-height: 1.2;
     margin: 0;
     padding-top: 15px;
     z-index: 1;
-    margin-left: 150px;
-    padding-left: 12px;
+    /*margin-left: 150px;*/
+    padding-left: 4px;
 }
 
-.blockquote h4:first-letter {
-    margin-left: -12px;
+.blockquote .blockquote-citation:first-letter {
+    margin-left: -10px;
 }
 
 /* Social Media Icons */
 
 .fa {
-    padding: 20px;
+    padding: 0 20px 0 20px;
     font-size: 30px;
     width: 50px;
     text-align: center;
@@ -526,107 +558,25 @@ hr {
 }
 
 .fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-.fa-google {
-    background: #dd4b39;
-    color: white;
-}
-
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
+    /*background: #3B5998;
+    color: white;*/
+    color: #8D8C8D;
 }
 
 .fa-youtube {
-    background: #bb0000;
-    color: white;
+    /*background: #bb0000;
+    color: white;*/
+    color: #8D8C8D;
 }
 
 .fa-instagram {
-    background: #125688;
-    color: white;
+    /*background: #125688;
+    color: white;*/
+    color: #8D8C8D;
 }
 
 .fa-pinterest {
-    background: #cb2027;
-    color: white;
-}
-
-.fa-snapchat-ghost {
-    background: #fffc00;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.fa-skype {
-    background: #00aff0;
-    color: white;
-}
-
-.fa-android {
-    background: #a4c639;
-    color: white;
-}
-
-.fa-dribbble {
-    background: #ea4c89;
-    color: white;
-}
-
-.fa-vimeo {
-    background: #45bbff;
-    color: white;
-}
-
-.fa-tumblr {
-    background: #2c4762;
-    color: white;
-}
-
-.fa-vine {
-    background: #00b489;
-    color: white;
-}
-
-.fa-foursquare {
-    background: #45bbff;
-    color: white;
-}
-
-.fa-stumbleupon {
-    background: #eb4924;
-    color: white;
-}
-
-.fa-flickr {
-    background: #f40083;
-    color: white;
-}
-
-.fa-yahoo {
-    background: #430297;
-    color: white;
-}
-
-.fa-soundcloud {
-    background: #ff5500;
-    color: white;
-}
-
-.fa-reddit {
-    background: #ff5700;
-    color: white;
-}
-
-.fa-rss {
-    background: #ff6600;
-    color: white;
+    /*background: #cb2027;
+    color: white;*/
+    color: #8D8C8D;
 }
