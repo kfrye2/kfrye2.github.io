@@ -190,6 +190,9 @@
 /* ------------------------------------------------------- */
 
 /* Sidebar */
+.sidebar-heading {
+    font-size: 23px;;
+}
 
 .sidebar {
     position: fixed;
@@ -238,7 +241,12 @@
     margin-top: 65px;
 }
 
-.recipies-section-header {
+
+.rec-main-header {
+    font-size: 35px;
+}
+
+.section {
     padding-top: 65px;
 }
 
@@ -246,6 +254,13 @@
     padding: 0;
 }
 
+.img-recipe {
+    height: 500px; 
+    width: 500px;
+}
+p {
+    padding-top: 1rem;
+}
 /* ------------------------------------------------------- */
 
 /* Main page Header */

@@ -33,16 +33,19 @@
                 <h4 class="text-center"><b>Subscribe</b> to our Mailing List</h4>
                 <hr>
                 <p>
-                    Sign up here to join our mailing list and be notified of any <b>new recipies!</b>
+                    Sign up here to join our mailing list and be notified of any <b>new recipes!</b>
                 </p>
                 <form>
                     <div class="form-group">
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter your email address">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
                     </div>
                 </form>
                 <div class="text-center" style="width: 100%;">
-                    <button type="button" class="btn btn-lg btn-info section-font" data-dismiss="alert" aria-label="Close">
+                    <button type="button" class="btn btn-lg btn-info section-font" data-dismiss="alert"
+                        aria-label="Close">
                         Sign Me Up
                     </button>
                 </div>
@@ -52,232 +55,640 @@
             </div>
         </div>
     </div>
-
-    <header>
-        <nav class="navbar navbar-expand fixed-top flex-column flex-md-row bd-navbar bg-charcoal">
-            <ul class="list-group list-group-horizontal">
-                <li class="list-group-item">
-                    <div class="btn btn-lg button-like section-font btn-dark-gray">
-                        Home
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <audio id="player" src="./Metal_Twang.mp3"></audio>
-                    <button onclick="document.getElementById('player').play()" class="btn btn-lg button-like section-font btn-pink font-dark-pink">Recipies</button>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="container-fluid">
-        <div class="row">
-            <div class="col-2">
-                <nav class="col-md-2 d-none d-md-block sidebar bg-light-gray box-shdw" id="GFG_scrollspy">
-                    <div class="sidebar-sticky">
-                        <ul class="nav nav-pills flex-column">
-                            <h6 class="sidebar-heading d-flex justify-content-between px-3 mt-4 mb-1 font-dark-gray sub-header-font"
-                                style="font-size: 30px;">
-                                <b>Prep & Set-Up</b>
-                            </h6>
-                            <li class="nav-item">
-                                <a class="nav-link active font-dark-pink" href="#A">
-                                    <svg class="bi bi-forward" width="1em" height="1em" viewBox="0 0 20 20"
-                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M11.502 7.513a.144.144 0 00-.202.134V8.65a.5.5 0 01-.5.5H4.5v2.9h6.3a.5.5 0 01.5.5v1.003c0 .108.11.176.202.134l3.984-2.933a.522.522 0 01.042-.028.147.147 0 000-.252.523.523 0 01-.042-.028l-3.984-2.933zm-1.202.134a1.144 1.144 0 011.767-.96l3.994 2.94a1.147 1.147 0 010 1.946l-3.994 2.94a1.144 1.144 0 01-1.767-.96v-.503H4a.5.5 0 01-.5-.5v-3.9a.5.5 0 01.5-.5h6.3v-.503z"
-                                            clip-rule="evenodd">
-                                        </path>
-                                    </svg>
-                                    <span>Ingredients</span>
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link font-dark-pink" href="#B">
-                                    <svg class="bi bi-forward" width="1em" height="1em" viewBox="0 0 20 20"
-                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M11.502 7.513a.144.144 0 00-.202.134V8.65a.5.5 0 01-.5.5H4.5v2.9h6.3a.5.5 0 01.5.5v1.003c0 .108.11.176.202.134l3.984-2.933a.522.522 0 01.042-.028.147.147 0 000-.252.523.523 0 01-.042-.028l-3.984-2.933zm-1.202.134a1.144 1.144 0 011.767-.96l3.994 2.94a1.147 1.147 0 010 1.946l-3.994 2.94a1.144 1.144 0 01-1.767-.96v-.503H4a.5.5 0 01-.5-.5v-3.9a.5.5 0 01.5-.5h6.3v-.503z"
-                                            clip-rule="evenodd">
-                                        </path>
-                                    </svg>
-                                    <span>Equiptment</span>
-                                </a>
-                            </li>
-                            <h6 class="sidebar-heading d-flex justify-content-between px-3 mt-4 mb-1 font-dark-gray sub-header-font"
-                                style="font-size: 30px;">
-                                <b>Cashew Cheese Sause</b>
-                            </h6>
-                            <li class="nav-item">
-                                <a class="nav-link font-dark-pink" href="#C">
-                                    <svg class="bi bi-forward" width="1em" height="1em" viewBox="0 0 20 20"
-                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M11.502 7.513a.144.144 0 00-.202.134V8.65a.5.5 0 01-.5.5H4.5v2.9h6.3a.5.5 0 01.5.5v1.003c0 .108.11.176.202.134l3.984-2.933a.522.522 0 01.042-.028.147.147 0 000-.252.523.523 0 01-.042-.028l-3.984-2.933zm-1.202.134a1.144 1.144 0 011.767-.96l3.994 2.94a1.147 1.147 0 010 1.946l-3.994 2.94a1.144 1.144 0 01-1.767-.96v-.503H4a.5.5 0 01-.5-.5v-3.9a.5.5 0 01.5-.5h6.3v-.503z"
-                                            clip-rule="evenodd">
-                                        </path>
-                                    </svg>
-                                    <span>Prepare and Make</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+    <div class="row">
+        <div class="col">
+            <header>
+                <nav class="navbar navbar-expand fixed-top flex-column flex-md-row bd-navbar bg-charcoal">
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item">
+                            <a href="index.html" class="btn btn-lg button-like section-font btn-dark-gray">
+                                Home
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <audio id="player" src="./Metal_Twang.mp3"></audio>
+                            <button onclick="document.getElementById('player').play()"
+                                class="btn btn-lg button-like section-font btn-pink font-dark-pink">Recipes</button>
+                        </li>
+                    </ul>
                 </nav>
-            </div>
+            </header>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
 
 
-            <div class="col">
+            <main class="container-fluid">
                 <div class="row">
-                    <div class="col">
-                        <div class="header-font font-charcoal text-shdw text-center" style="font-size:120px;">
-                            Lazagna
-                        </div>
-                        <div class="text-center">
-                            <img src="images/Lazagna_2.JPG" class="box-shdw" style="height: 500px; width: 500px;">
+                    <div class="col-2">
+                        <nav class="col-md-2 d-none d-md-block sidebar bg-light-gray box-shdw" id="GFG_scrollspy">
+                            <div class="sidebar-sticky">
+                                <ul class="nav nav-pills flex-column">
+                                    <h6
+                                        class="sidebar-heading d-flex justify-content-between px-3 mt-4 mb-1 font-dark-gray sub-header-font">
+                                        <b>Prep & Set-Up</b>
+                                    </h6>
+                                    <li class="nav-item">
+                                        <a class="nav-link active font-dark-pink" href="#A">
+                                            <svg class="bi bi-forward" width="1em" height="1em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M11.502 7.513a.144.144 0 00-.202.134V8.65a.5.5 0 01-.5.5H4.5v2.9h6.3a.5.5 0 01.5.5v1.003c0 .108.11.176.202.134l3.984-2.933a.522.522 0 01.042-.028.147.147 0 000-.252.523.523 0 01-.042-.028l-3.984-2.933zm-1.202.134a1.144 1.144 0 011.767-.96l3.994 2.94a1.147 1.147 0 010 1.946l-3.994 2.94a1.144 1.144 0 01-1.767-.96v-.503H4a.5.5 0 01-.5-.5v-3.9a.5.5 0 01.5-.5h6.3v-.503z"
+                                                    clip-rule="evenodd">
+                                                </path>
+                                            </svg>
+                                            <span>Ingredients</span>
+                                        </a>
+                                    </li>
 
-                        </div>
-                        <!--Auto-play video HTML5 GIF-->
-                        <div>
-                            <video autoplay loop muted playsinline>
-                                <source src="pasta_gif.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        
+                                    <li class="nav-item">
+                                        <a class="nav-link font-dark-pink" href="#B">
+                                            <svg class="bi bi-forward" width="1em" height="1em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M11.502 7.513a.144.144 0 00-.202.134V8.65a.5.5 0 01-.5.5H4.5v2.9h6.3a.5.5 0 01.5.5v1.003c0 .108.11.176.202.134l3.984-2.933a.522.522 0 01.042-.028.147.147 0 000-.252.523.523 0 01-.042-.028l-3.984-2.933zm-1.202.134a1.144 1.144 0 011.767-.96l3.994 2.94a1.147 1.147 0 010 1.946l-3.994 2.94a1.144 1.144 0 01-1.767-.96v-.503H4a.5.5 0 01-.5-.5v-3.9a.5.5 0 01.5-.5h6.3v-.503z"
+                                                    clip-rule="evenodd">
+                                                </path>
+                                            </svg>
+                                            <span>Equiptment</span>
+                                        </a>
+                                    </li>
+                                    <h6
+                                        class="sidebar-heading d-flex justify-content-between px-3 mt-4 mb-1 font-dark-gray sub-header-font">
+                                        <b>Cashew Cheese Sause</b>
+                                    </h6>
+                                    <li class="nav-item">
+                                        <a class="nav-link font-dark-pink" href="#C">
+                                            <svg class="bi bi-forward" width="1em" height="1em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M11.502 7.513a.144.144 0 00-.202.134V8.65a.5.5 0 01-.5.5H4.5v2.9h6.3a.5.5 0 01.5.5v1.003c0 .108.11.176.202.134l3.984-2.933a.522.522 0 01.042-.028.147.147 0 000-.252.523.523 0 01-.042-.028l-3.984-2.933zm-1.202.134a1.144 1.144 0 011.767-.96l3.994 2.94a1.147 1.147 0 010 1.946l-3.994 2.94a1.144 1.144 0 01-1.767-.96v-.503H4a.5.5 0 01-.5-.5v-3.9a.5.5 0 01.5-.5h6.3v-.503z"
+                                                    clip-rule="evenodd">
+                                                </path>
+                                            </svg>
+                                            <span>Prepare & Make</span>
+                                        </a>
+                                    </li>
+                                    <h6
+                                        class="sidebar-heading d-flex justify-content-between px-3 mt-4 mb-1 font-dark-gray sub-header-font">
+                                        <b>"Meat" Sause</b>
+                                    </h6>
+                                    <li class="nav-item">
+                                        <a class="nav-link font-dark-pink" href="#D">
+                                            <svg class="bi bi-forward" width="1em" height="1em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M11.502 7.513a.144.144 0 00-.202.134V8.65a.5.5 0 01-.5.5H4.5v2.9h6.3a.5.5 0 01.5.5v1.003c0 .108.11.176.202.134l3.984-2.933a.522.522 0 01.042-.028.147.147 0 000-.252.523.523 0 01-.042-.028l-3.984-2.933zm-1.202.134a1.144 1.144 0 011.767-.96l3.994 2.94a1.147 1.147 0 010 1.946l-3.994 2.94a1.144 1.144 0 01-1.767-.96v-.503H4a.5.5 0 01-.5-.5v-3.9a.5.5 0 01.5-.5h6.3v-.503z"
+                                                    clip-rule="evenodd">
+                                                </path>
+                                            </svg>
+                                            <span>Essential Ingredients</span>
+                                        </a>
+                                        <a class="nav-link font-dark-pink" href="#E">
+                                            <svg class="bi bi-forward" width="1em" height="1em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M11.502 7.513a.144.144 0 00-.202.134V8.65a.5.5 0 01-.5.5H4.5v2.9h6.3a.5.5 0 01.5.5v1.003c0 .108.11.176.202.134l3.984-2.933a.522.522 0 01.042-.028.147.147 0 000-.252.523.523 0 01-.042-.028l-3.984-2.933zm-1.202.134a1.144 1.144 0 011.767-.96l3.994 2.94a1.147 1.147 0 010 1.946l-3.994 2.94a1.144 1.144 0 01-1.767-.96v-.503H4a.5.5 0 01-.5-.5v-3.9a.5.5 0 01.5-.5h6.3v-.503z"
+                                                    clip-rule="evenodd">
+                                                </path>
+                                            </svg>
+                                            <span>Mix it Up</span>
+                                        </a>
+                                    </li>
+                                    <h6
+                                        class="sidebar-heading d-flex justify-content-between px-3 mt-4 mb-1 font-dark-gray sub-header-font">
+                                        <b>Putting it All Together</b>
+                                    </h6>
+                                    <li class="nav-item">
+                                        <a class="nav-link font-dark-pink" href="#F">
+                                            <svg class="bi bi-forward" width="1em" height="1em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M11.502 7.513a.144.144 0 00-.202.134V8.65a.5.5 0 01-.5.5H4.5v2.9h6.3a.5.5 0 01.5.5v1.003c0 .108.11.176.202.134l3.984-2.933a.522.522 0 01.042-.028.147.147 0 000-.252.523.523 0 01-.042-.028l-3.984-2.933zm-1.202.134a1.144 1.144 0 011.767-.96l3.994 2.94a1.147 1.147 0 010 1.946l-3.994 2.94a1.144 1.144 0 01-1.767-.96v-.503H4a.5.5 0 01-.5-.5v-3.9a.5.5 0 01.5-.5h6.3v-.503z"
+                                                    clip-rule="evenodd">
+                                                </path>
+                                            </svg>
+                                            <span>Layering</span>
+                                        </a>
+                                        <a class="nav-link font-dark-pink" href="#G">
+                                            <svg class="bi bi-forward" width="1em" height="1em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M11.502 7.513a.144.144 0 00-.202.134V8.65a.5.5 0 01-.5.5H4.5v2.9h6.3a.5.5 0 01.5.5v1.003c0 .108.11.176.202.134l3.984-2.933a.522.522 0 01.042-.028.147.147 0 000-.252.523.523 0 01-.042-.028l-3.984-2.933zm-1.202.134a1.144 1.144 0 011.767-.96l3.994 2.94a1.147 1.147 0 010 1.946l-3.994 2.94a1.144 1.144 0 01-1.767-.96v-.503H4a.5.5 0 01-.5-.5v-3.9a.5.5 0 01.5-.5h6.3v-.503z"
+                                                    clip-rule="evenodd">
+                                                </path>
+                                            </svg>
+                                            <span>Bake</span>
+                                        </a>
+                                        <a class="nav-link font-dark-pink" href="#H">
+                                            <svg class="bi bi-forward" width="1em" height="1em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M11.502 7.513a.144.144 0 00-.202.134V8.65a.5.5 0 01-.5.5H4.5v2.9h6.3a.5.5 0 01.5.5v1.003c0 .108.11.176.202.134l3.984-2.933a.522.522 0 01.042-.028.147.147 0 000-.252.523.523 0 01-.042-.028l-3.984-2.933zm-1.202.134a1.144 1.144 0 011.767-.96l3.994 2.94a1.147 1.147 0 010 1.946l-3.994 2.94a1.144 1.144 0 01-1.767-.96v-.503H4a.5.5 0 01-.5-.5v-3.9a.5.5 0 01.5-.5h6.3v-.503z"
+                                                    clip-rule="evenodd">
+                                                </path>
+                                            </svg>
+                                            <span>The Final Product</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item" style="position: absolute; bottom: 0; width: 208px;">
+                                        <a class="nav-link font-charcoal" href="#I">
+                                            <em class="sub-header-font"><b>Skip to the Recipe</b></em>
+                                            <svg class="bi bi-forward-fill" width="1em" height="1em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.77 14.11l4.012-2.953a.647.647 0 000-1.114L11.771 7.09a.644.644 0 00-.971.557V8.65H4v3.9h6.8v1.003c0 .505.545.808.97.557z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+
+                    <div class="col">
                         <div class="row">
                             <div class="col">
-                                <div id="A" class="section">
-                                    <h1 class="recipies-section-header font-dark-gray">Prep & Set-Up</h1>
-                                    <div class="section-font">Ingredients</div>
-                                    <h2>
-                                        Wikipedia (/ˌwɪkɪˈpiːdiə/ (About this soundlisten) wik-ih-PEE-dee-ə or
-                                        /ˌwɪkiˈpiːdiə/
-                                        (About
-                                        this soundlisten) wik-ee-PEE-dee-ə) is a multilingual online encyclopedia
-                                        created and
-                                        maintained
-                                        as an open collaboration project[4] by a community of volunteer editors using a
-                                        wiki-based
-                                        editing system.[5] It is the largest and most popular general reference work on
-                                        the
-                                        World Wide
-                                        Web,[6][7][8] and is one of the most popular websites ranked by Alexa as of
-                                        January
-                                        2020.[9] It
-                                        features exclusively free content and no commercial ads, and is owned and
-                                        supported by
-                                        the
-                                        Wikimedia Foundation, a non-profit organization funded primarily through
-                                        donations.[10][11][12][13]
-                                    </h2>
+                                <div class="header-font font-charcoal text-shdw text-center" style="font-size:120px;">
+                                    Lasagne
                                 </div>
-                                <div id="B" class="section">
-                                    <h1 class="recipies-section-header">B</h1>
-                                    <h2>
-                                        Wikipedia was launched on January 15, 2001, by Jimmy Wales and Larry Sanger.[14]
-                                        Sanger
-                                        coined
-                                        its name,[15][16] as a portmanteau of "wiki" (the Hawaiian word for "quick")[17]
-                                        and
-                                        "encyclopedia". Initially an English-language encyclopedia, versions of
-                                        Wikipedia in
-                                        other
-                                        languages were quickly developed. With at least 6,021,363 articles,[note 3] the
-                                        English
-                                        Wikipedia is the largest of the more than 290 Wikipedia encyclopedias. Overall,
-                                        Wikipedia
-                                        comprises more than 40 million articles in 301 different languages[18] and by
-                                        February
-                                        2014 it
-                                        had reached 18 billion page views and nearly 500 million unique visitors per
-                                        month.[19]
-                                    </h2>
+                                <div class="text-center">
+                                    <img src="images/Lazagna_2.JPG" class="box-shdw img-recipe">
                                 </div>
-                                <div id="C" class="section">
-                                    <h1 class="recipies-section-header">C</h1>
-                                    <h2>
-                                        In 2005, Nature published a peer review comparing 42 hard science articles from
-                                        Encyclopædia
-                                        Britannica and Wikipedia and found that Wikipedia's level of accuracy approached
-                                        that of
-                                        Britannica,[20] although critics suggested that it might not have fared so well
-                                        in a
-                                        similar
-                                        study of a random sampling of all articles or one focused on social science or
-                                        contentious
-                                        social issues.[21][22] The following year, Time magazine stated that the
-                                        open-door
-                                        policy of
-                                        allowing anyone to edit had made Wikipedia the biggest and possibly the best
-                                        encyclopedia in the
-                                        world, and was a testament to the vision of Jimmy Wales.[23]
-                                    </h2>
-                                </div>
-                                <div id="D" class="section">
-                                    <h1 class="recipies-section-header">D</h1>
-                                    <h2>
-                                        Wikipedia has been criticized for exhibiting systemic bias, for presenting a
-                                        mixture of
-                                        "truth,
-                                        half truth, and some falsehoods",[24] and for being subject to manipulation and
-                                        spin in
-                                        controversial topics.[25] Wikipedia has been criticized for gender bias,
-                                        particularly on
-                                        its
-                                        English-language site, where the dominant majority of editors are male. However,
-                                        Edit-a-thons
-                                        have been held to encourage female editors and increase the coverage of women's
-                                        topics.[26][27]
-                                        Facebook announced that by 2017 it would help readers detect fake news by
-                                        suggesting
-                                        links to
-                                        related Wikipedia articles. YouTube announced a similar plan in 2018.[28]
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3" style="padding: 0;">
-                        <div class="info-sticky">
-                            <div class="row">
-                                <div class="col" style="padding: 0;">
-                                    <div class="blockquote-wrapper">
-                                        <div class="blockquote">
-                                            <div class="blockquote-quote">
-                                                Veganism is <b>not a sacrifice</b>.<br>It is a <b>joy!</b>
-                                                <div class="blockquote-citation font-dark-gray">&mdash;<em>Gary L.
-                                                        Francione</em></div>
+
+                                <div class="row">
+                                    <div class="col section-font">
+                                        <div id="A" class="section">
+                                            <h1 class="recipies-section-header font-dark-gray">Prep & Set-Up</h1>
+                                            <div class="rec-main-header">Ingredients</div>
+                                            <p>
+                                                As a special note, we want to emphasise that cooking is never an exact
+                                                science and half the fun is figuring out how improvise to make a recipe
+                                                work. We certainly did, and we encourage you to do the same! Feel free
+                                                to make this recipe your own, subsitute things you already have in your
+                                                kitchen, and just have fun! We garentee that, even if you veer off the
+                                                path a little, this will still be delicious when its all done.
+                                            </p>
+                                            <div>
+                                                <ul>
+                                                    <li>1 1/2 Cup Cashews</li>
+                                                    <li>1 Cup Water</li>
+                                                    <li>1 tbsp Apple Cider Vinegar</li>
+                                                    <li>2 tbsp Nutritional Yeast</li>
+                                                    <li>1 tbsp Garlic Powder</li>
+                                                    <li>1 tbsp Onion Powder</li>
+
+                                                    <li>1 White Onion</li>
+                                                    <li>2 Cloves Garlic</li>
+                                                    <!--Cook until Brown (7min)-->
+                                                    <li>1-2 tbsp Olive Oil</li>
+                                                    <li>12oz Plant-Based Ground Beef</li>
+                                                    <!--Impossible-->
+                                                    <!--https://impossiblefoods.com/-->
+                                                    <li>4 3.5oz Plant-Based Sausage</li>
+                                                    <!--Beyond Meet HOT Italian Sausage-->
+                                                    <!--https://www.beyondmeat.com/products/hot-italian/-->
+                                                    <!--Add Onions-->
+                                                    <!--Add Garlic-->
+
+                                                    <li>1/2 tsp Basil</li>
+                                                    <!--Fresh or dried (we used dried)-->
+                                                    <li>1/2 tsp Italian Seasoning</li>
+                                                    <li>1/2 tsp Thyme</li>
+                                                    <!--Fresh or dried (we used dried)-->
+                                                    <li>1-2 tsp Salt</li>
+                                                    <li>1-2 tsp Ground Pepper</li>
+                                                    <li>24oz Tomato Sause</li>
+                                                    <!--Pick your favorite flavor - we like garlic. Chunky or otherwise-->
+                                                    <li>1 1/2 - 2 cups Sliced Cherry Tomatos</li>
+                                                    <!--cause they are delicious-->
+                                                    <!--Let simmer for about 20-30 minutes on low-->
+
+                                                    <li>16oz Lasagne Pasta</li>
+                                                    <!--16oz or less - we did not use the whole thing-->
+                                                    <!--Vegan Cheeses of your choice. We used...-->
+                                                    <li>1/3 Cup <em>Follow Your Heart</em> Parmesan Style Grated Cheese
+                                                        Alternative</li>
+                                                    <!--https://followyourheart.com/products/parmesan-grated/-->
+                                                    <li>1/2 Cup <em>Daiya</em> Dairy-Free Shredded Cheddar Cheese</li>
+                                                    <!--https://daiyafoods.com/our-foods/shreds/cheddar/-->
+                                                    <li>4oz <em>Miyokos</em> Creamery Organic Vegan Mozzarella Nut
+                                                        Cheese
+                                                    </li>
+                                                    <!--https://miyokos.com/products/fresh-vegan-mozzarella-cheese-->
+
+                                                    <!--Cover in aluminum foil and bake at 350 for 30 min. uncover and cook for an additional 10 min-->
+                                                </ul>
                                             </div>
                                         </div>
-                                        <div>
-                                            <img src="icon.png" class="float-left"
-                                                style="height: 140px; transform: translate(0%, -5%);">
+
+                                        <div id="B" class="section">
+                                            <div class="rec-main-header">Equiptment</div>
+                                            <div>
+                                                <ul>
+                                                    <li>Blender / Food Processor</li>
+                                                    <li>Insta-Pot / Large (5-8 Quart) Pot</li>
+                                                    <li>2 3-5 inch tall Baking Pans</li>
+                                                    <li>Aluminum Foil</li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <p class="section-font" style="font-size:12px; padding-top:10px;">
-                                            Hello and welcome! My husband Nate and I made this blog to share our
-                                            favorite meat-loving recipies as vegan friendly dishes.
-                                            Enjoy!
-                                        </p>
+
+                                        <div id="C" class="section">
+                                            <h1 class="recipies-section-header font-dark-gray">Cashew Cheese Sause</h1>
+                                            <div class="rec-main-header">Prepare & Make</div>
+                                            <p>
+                                                The ingredients, preparation, and instructions for making the Cashew
+                                                Cheese Sause is recorded in a different page. You can navigate to the
+                                                page by clicking
+                                                <a href="cashew_sause.html">here</a>.
+                                            </p>
+                                            <div class="text-center">
+                                                <img src="images/Alfredo_Sause_2.JPG" class="box-shdw img-recipe">
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="cashew_sause.html">Go To Recipe >></a>
+                                            </div>
+                                        </div>
+
+                                        <div id="D" class="section">
+                                            <h1 class="recipies-section-header font-dark-gray">"Meat" Sause</h1>
+                                            <div class="rec-main-header">Essential Ingredients</div>
+                                            <p>
+                                                It is a good time to be a vegan becasue... plant-based meat alternatives
+                                                are a thing. There are a bunch of different choices, and the best one(s)
+                                                for you really depend on your personal taste. If you want to know more
+                                                about plant-based burgers and the different brands out there that you
+                                                should try, check out
+                                                <a
+                                                    href="https://www.nytimes.com/2019/10/22/dining/veggie-burger-taste-test.html">
+                                                    this article
+                                                </a>
+                                                by the NY Times for some reviews to help you get started.
+                                            </p>
+                                            <div class="text-center">
+                                                <img src="images/Lazagna_Meat_4.JPG" class="box-shdw img-recipe">
+                                            </div>
+                                            <p>
+                                                We chose to use the
+                                                <a href="https://impossiblefoods.com/">Impossible Burger</a>
+                                                for this recipe becasue 1) its one of the best plant-based ground-beef
+                                                substitues out there and 2) it doesn't have that strong taste profile
+                                                that some of the other brands, like the
+                                                <a href="https://www.beyondmeat.com/products/the-beyond-burger/">
+                                                    Beyond Burger,
+                                                </a>
+                                                have. Beyond is my favorite brand for hamburgers precisely becasue of
+                                                this reason - you don't have to add any fancy ingredients to make it
+                                                taste good - it comes that way already! But for our purposes, a more
+                                                subtle flavor is preferable.
+                                            </p>
+
+                                            <p>
+                                                The sausage is not a neccessary ingredient - you can forgo it and add
+                                                more ground-beef or a chunkier tomato sause later on. But, if you like a
+                                                little extra heat and/or you want a little more flavor in the sause, we
+                                                recomend it!The
+                                                <a href="https://www.beyondmeat.com/products/hot-italian/">
+                                                    Beyond Meat Hot Sausage
+                                                </a>
+                                                is our favorite.
+                                            </p>
+
+                                        </div>
+
+                                        <div id="E" class="section">
+                                            <div class="rec-main-header">Mix it Up</div>
+                                            <p>
+                                                Place the plant-based meat into the pot, separate it using a spoon or
+                                                spatula, and let cook, uncovered, for about 7 minutes or until brown,
+                                                stirring occasionally.
+                                            </p>
+                                            <div class="text-center">
+                                                <img src="images/Lazagna_Meat_1.JPG" class="box-shdw img-recipe">
+                                            </div>
+                                            <p>
+                                                Once the plant-based "meat" has browned, add the garlic and onions to
+                                                and continue to mix together. Lower the heat on the pot to a simmer so
+                                                that nothing sticks to the bottom, and make sure to keep sitring! Yes,
+                                                it gets a little annoying... push through it.
+                                            </p>
+                                            <div class="text-center">
+                                                <img src="images/Lazagna_Meat_2.JPG" class="box-shdw img-recipe">
+                                            </div>
+                                            <br>
+                                            <div class="text-center">
+                                                <img src="images/Lazagna_Meat_3.JPG" class="box-shdw img-recipe">
+                                            </div>
+                                            <p>
+                                                The last step of this is to add the tomato sause and some seasoning. We
+                                                also added some cherry tomatos becasue they are delicious and we had
+                                                some extra cherry tomatos in our fridge. Turn off the burner, add the
+                                                seasoning, and stir together.
+                                            </p>
+                                            <div class="text-center">
+                                                <img src="images/Lazagna_Meat_5.JPG" class="box-shdw img-recipe">
+                                            </div>
+                                            <p>
+                                                The resulting sause should be the consistency of a thick soup, but not
+                                                too watery. If the consistency is not right, add some additional
+                                                ingredients to fix it. If it is too watery, keep the pot on a low simmer
+                                                and stir until reaching the right consistency. If it is too thick, just
+                                                add some additional sause (if you have any) or water if not.
+                                            </p>
+
+                                        </div>
+
+                                        <div id="F" class="section">
+                                            <h1 class="recipies-section-header font-dark-gray">Putting it All Together
+                                            </h1>
+                                            <p>
+                                                Almost done! The harest part is behind you now - no more stirring
+                                                required.
+                                            </p>
+                                            <div class="text-center">
+                                                <img src="images/Lazagna_MF_1.JPG" class="box-shdw"
+                                                    style="height: 450px;width: 100%;">
+                                            </div>
+                                            <br>
+                                            <div class="rec-main-header">Layering</div>
+                                            <p> Time to put the cheese, meat sause and pasta together.</p>
+                                            <div class="text-center">
+                                                <img src="images/Lazagna_MF_1a.JPG" class="box-shdw img-recipe">
+                                            </div>
+                                            <p>
+                                                This is when you need to get a little creative. I would recommend adding
+                                                at least one kind (if I had to only choose one:
+                                                <a href="https://miyokos.com/products/fresh-vegan-mozzarella-cheese">
+                                                    <em>Miyokos</em> Creamery Organic Vegan Mozzarella Nut Cheese).
+                                                </a>
+                                                However, we also listed a few extra cheeses becasue we had some in our
+                                                fridge.
+                                            </p>
+                                            <p>
+                                                Cook the pasta. You want it to be al dente, so follow the instructions
+                                                on the box for the correct cooking time. Drain the pasta and pull out
+                                                the baking pan.
+                                            </p>
+                                            <!--Auto-play video HTML5 GIF-->
+                                            <div class="box-shdw"
+                                                style="margin: auto auto; height: 320px; width: 480px;">
+                                                <video autoplay loop muted playsinline>
+                                                    <source src="pasta_gif.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                            <p>
+                                                Layer the Lasagne, swaping between meat sause, cashew cheese sause,
+                                                assorted cheeses, and pasta, until the pan is about a centimeter from
+                                                the top. Do this for both baking pans.
+                                            </p>
+                                            <div class="text-center">
+                                                <img src="images/Lazagna_MF_2.JPG" class="box-shdw img-recipe">
+                                            </div>
+                                            <p>
+                                                Top it off with a tick layer of cheese and sause - be generous, you
+                                                can't have too much cheese!
+                                            </p>
+                                            <div class="text-center">
+                                                <img src="images/Lazagna_MF_3.JPG" class="box-shdw img-recipe">
+                                            </div>
+                                            <br>
+                                            <div class="text-center">
+                                                <img src="images/Lazagna_MF_4.JPG" class="box-shdw img-recipe">
+                                            </div>
+                                        </div>
+
+                                        <div id="G" class="section">
+                                            <div class="rec-main-header">Bake</div>
+                                            <p>
+                                                Cover the pans with aluminum foil and fold-down on all sides. Place the
+                                                pans in the over at 350 for 30 min to cook the inside and heat the
+                                                cheese. Take the pans out, uncover, and place back in the oven to cook
+                                                for an additional 10 min to crisp the top.
+                                            </p>
+                                            <div class="text-center">
+                                                <img src="images/Lazagna_MF_5.JPG" class="box-shdw img-recipe">
+                                            </div>
+                                        </div>
+
+                                        <div id="H" class="section">
+                                            <div class="rec-main-header">The Final Product</div>
+                                            <p>
+                                                Cut the Lasagne (the size is up to you), plate it, eat and enjoy! Add
+                                                fresh parsley or basil if you feel like adding a little extra flourish.
+                                            </p>
+                                            <div class="text-center">
+                                                <img src="images/Lazagna_1.JPG" class="box-shdw img-recipe">
+                                            </div>
+                                            <br>
+                                            <div class="text-center">
+                                                <img src="images/Lazagna_2.JPG" class="box-shdw img-recipe">
+                                            </div>
+                                            <br>
+                                            <div class="text-center">
+                                                <img src="images/Lazagna_3.JPG" class="box-shdw img-recipe">
+                                            </div>
+                                            <br>
+                                            <div class="text-center">
+                                                <img src="images/Lazagna_4.JPG" class="box-shdw img-recipe">
+                                            </div>
+                                        </div>
+
+                                        <div id="I" class="section">
+                                            <div class="rec-main-header">Recipe</div>
+                                            <div style="text-align: center; margin:20px 0 20px 0;">
+                                                <iframe width="590" height="345"
+                                                    src="https://www.youtube.com/embed/-xmzeWTePrM" frameborder="0"
+                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen></iframe>
+                                            </div>
+                                            <div
+                                                style="margin-bottom: 20px; padding: 20px; width:100%; border: 2px solid #A3A5A6;">
+                                                <div class="text-center">
+                                                    <h4>Traditional Lasagne - Vegan Style</h4>
+                                                    <p class="font-pink">
+                                                        <svg class="bi bi-star-fill" width="1em" height="1em"
+                                                            viewBox="0 0 20 20" fill="currentColor"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M5.612 17.443c-.386.198-.824-.149-.746-.592l.83-4.73-3.522-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.184-4.327c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L10 15.187l-4.389 2.256z">
+                                                            </path>
+                                                        </svg>
+                                                        <svg class="bi bi-star-fill" width="1em" height="1em"
+                                                            viewBox="0 0 20 20" fill="currentColor"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M5.612 17.443c-.386.198-.824-.149-.746-.592l.83-4.73-3.522-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.184-4.327c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L10 15.187l-4.389 2.256z">
+                                                            </path>
+                                                        </svg>
+                                                        <svg class="bi bi-star-fill" width="1em" height="1em"
+                                                            viewBox="0 0 20 20" fill="currentColor"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M5.612 17.443c-.386.198-.824-.149-.746-.592l.83-4.73-3.522-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.184-4.327c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L10 15.187l-4.389 2.256z">
+                                                            </path>
+                                                        </svg>
+                                                        <svg class="bi bi-star-fill" width="1em" height="1em"
+                                                            viewBox="0 0 20 20" fill="currentColor"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M5.612 17.443c-.386.198-.824-.149-.746-.592l.83-4.73-3.522-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.184-4.327c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L10 15.187l-4.389 2.256z">
+                                                            </path>
+                                                        </svg>
+                                                        <svg class="bi bi-star-fill" width="1em" height="1em"
+                                                            viewBox="0 0 20 20" fill="currentColor"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M5.612 17.443c-.386.198-.824-.149-.746-.592l.83-4.73-3.522-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.184-4.327c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L10 15.187l-4.389 2.256z">
+                                                            </path>
+                                                        </svg>
+                                                        <span><em>31</em></span>
+                                                    </p>
+                                                </div>
+                                                <p>
+                                                    <em>
+                                                        A savory meat and cheese Lasagne that tastes like the real
+                                                        thing!
+                                                    </em>
+                                                </p>
+                                                <p>
+                                                    <b>Author: </b>Nate Nuval
+                                                    <br>
+                                                    <b>Prep Time: </b>15 min
+                                                    <br>
+                                                    <b>Cook Time: </b>1 h 10 min
+                                                    <br>
+                                                    <b>Yield: </b>Serves 12-16
+                                                </p>
+                                                <p><b>INGREDIENTS</b></p>
+                                                <ul>
+                                                    <p style="padding:0;"><b>Cashews Cheese Sause</b></p>
+                                                    <li>1 &frac12; Cup Cashews</li>
+                                                    <li>1 Cup Water</li>
+                                                    <li>1 tbsp Apple Cider Vinegar</li>
+                                                    <li>2 tbsp Nutritional Yeast</li>
+                                                    <li>1 tbsp Garlic Powder</li>
+                                                    <li>1 tbsp Onion Powder</li>
+
+                                                    <p><b>"Meat" Sause</b></p>
+                                                    <li>1 White Onion</li>
+                                                    <li>2 Cloves Garlic</li>
+                                                    <li>1-2 tbsp Olive Oil</li>
+                                                    <li>12oz Plant-Based Ground Beef</li>
+                                                    <li>4 3.5oz Plant-Based Sausage</li>
+                                                    <li>&frac12; tsp Basil</li>
+                                                    <li>&frac12; tsp Italian Seasoning</li>
+                                                    <li>&frac12; tsp Thyme</li>
+                                                    <li>1-2 tsp Salt</li>
+                                                    <li>1-2 tsp Ground Pepper</li>
+                                                    <li>24oz (3 Cups) Tomato Sause</li>
+                                                    <li>1 &frac12; - 2 cups Sliced Cherry Tomatos</li>
+
+                                                    <p><b>Pasta & Cheese</b></p>
+                                                    <li>16oz Lasagne Pasta</li>
+                                                    <li>&frac13; Cup <em>Follow Your Heart</em> Parmesan Style Grated
+                                                        Cheese Alternative
+                                                    </li>
+                                                    <li>&frac12; Cup <em>Daiya</em> Dairy-Free Shredded Cheddar Cheese
+                                                    </li>
+                                                    <li>4oz <em>Miyokos</em> Creamery Organic Vegan Mozzarella Nut
+                                                        Cheese
+                                                    </li>
+                                                </ul>
+                                                <p><b>INSTRUCTIONS</b></p>
+                                                <p style="padding:0;">
+                                                    Soak cashews for 3-5 hours in water. If you are limited on
+                                                    time, bring a smaller pot of water to boil, pour over cashews, and
+                                                    let sit for 30 minutes. Do not drain water.
+                                                </p>
+                                                <p>
+                                                    Blend together the cashews, (cashew) water, apple cider vinegar,
+                                                    nutritional yeast garlic powder, and onion powder until smooth. Put
+                                                    aside.
+                                                </p>
+                                                <p>
+                                                    Cut onion into small peices (~1 cm long). Cut garlic finely.
+                                                    Set both aside.
+                                                </p>
+                                                <p>
+                                                    Add oil to pot and turn to medium-low heat. Add package of
+                                                    plant-based ground-beef and plant-based sausage. Use spatula to
+                                                    break apart "meat" into fine peices and cook, stiring continuously,
+                                                    until browned (about 7 minutes).
+                                                </p>
+                                                <p>
+                                                    Turn heat to low. Add onions and garlic basil, Italian seasoning,
+                                                    thyme, salt and ground pepper to miture and stir together well. Add
+                                                    tomato sause and sliced cherry tomatos to mixture and stir together.
+                                                    Let simmer for 20-30 minutes.
+                                                </p>
+                                                <p>
+                                                    Pre-heat over to 350° F. In a 3-5 inch tall pan, start layering meat
+                                                    sause, cashew cheese sause, a sprinkling of vegan cheese, and pasta.
+                                                    Stop about 1 cm from the top. Use a second pan if needed.
+                                                </p>
+                                                <p>
+                                                    Cover the pans in aluminum foil. Place in over and cook for 30
+                                                    minutes. Take pan out, uncover, and place back in the oven to cook
+                                                    for another 10 minutes.
+                                                </p>
+                                                <p>
+                                                    Cut into segements, eat, and enjoy!
+                                                </p>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
-                            <hr style="border: 1px solid #f0edee; width: 75%;">
-                            <div class="row">
-                                <div class="col text-center" style="padding: 0;">
-                                    <a href="#" class="fa fa-youtube"></a>
-                                    <a href="#" class="fa fa-instagram"></a>
-                                    <a href="#" class="fa fa-pinterest"></a>
-                                    <a href="#" class="fa fa-facebook"></a>
+                            <div class="col-3" style="padding: 0;">
+                                <div class="info-sticky">
+                                    <div class="row">
+                                        <div class="col" style="padding: 0;">
+                                            <div class="blockquote-wrapper">
+                                                <div class="blockquote">
+                                                    <div class="blockquote-quote">
+                                                        Veganism is <b>not a sacrifice</b>.<br>It is a <b>joy!</b>
+                                                        <div class="blockquote-citation font-dark-gray">&mdash;<em>Gary
+                                                                L. Francione</em></div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="icon.png" class="float-left"
+                                                        style="height: 140px; transform: translate(0%, -5%);">
+                                                </div>
+                                                <p class="section-font" style="font-size:12px; padding-top:10px;">
+                                                    Hello and welcome! My husband Nate and I made this blog to share our
+                                                    favorite meat-loving recipes as vegan friendly dishes.
+                                                    Enjoy!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr style="border: 1px solid #f0edee; width: 75%;">
+                                    <div class="row">
+                                        <div class="col text-center" style="padding: 0;">
+                                            <a href="https://www.youtube.com/embed/-xmzeWTePrM"
+                                                class="fa fa-youtube"></a>
+                                            <a href="#" class="fa fa-instagram"></a>
+                                            <a href="#" class="fa fa-pinterest"></a>
+                                            <a href="#" class="fa fa-facebook"></a>
+                                        </div>
+                                    </div>
+                                    <hr style="border: 1px solid #f0edee; width: 75%;">
                                 </div>
+
                             </div>
-                            <hr style="border: 1px solid #f0edee; width: 75%;">
                         </div>
 
                     </div>
                 </div>
-
-            </div>
         </div>
-    </main>
+        </main>
+    </div>
 </body>
 
 <!-- Optional JavaScript -->
